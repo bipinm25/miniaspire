@@ -27,11 +27,9 @@ class LoanController extends Controller
         $exist = Loan::where('user_id', JWTAuth::user()->id)->where('status', 1)->count();
 
         if($exist){
-            return response()->json(['You have one loan in progress, please complete it to apply new one'], 200);
+            return response()->json(['message' => 'You have one loan in progress, please complete it to apply new one']);
         }
         
-
-        //$loan_status = config('loan.loan_status');
         try{
 
             $processing_fee = 1;
