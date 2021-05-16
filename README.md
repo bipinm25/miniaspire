@@ -1,5 +1,3 @@
-# miniaspire
-
 #Installation
 
 - Clone the repository to local
@@ -13,12 +11,12 @@
 
  We can use postman for testing API (https://www.postman.com/downloads/)
 
-- create a user for login 
+- Create a user for login
   - method - `post`
   - params - `name, email, password`
   - url`http://127.0.0.1:8000/api/register`
   
-- login
+- Login
   - method - `post`
   - params - `email, password`
   - url`http://127.0.0.1:8000/api/login`
@@ -33,6 +31,11 @@
   - method - `post`
   - params - `repayment_amount`
   - url`http://127.0.0.1:8000/api/payment`
+  
+- Get Loan details
+  - method - `get`  
+  - url`http://127.0.0.1:8000/api/getloan`
+  
 
 
 # Third party package used
